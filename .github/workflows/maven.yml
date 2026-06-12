@@ -1,0 +1,23 @@
+name: Build TestEconomy
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven
+    - run: mvn -B clean package --file pom.xml
+    - uses: actions/upload-artifact@v4
+      with:
+        name: TestEconomy
+        path: target/TestEconomy-1.0.0.jar
