@@ -1,0 +1,25 @@
+shop:
+  title: "Shop"
+  size: 54
+  items:
+    diamond:
+      material: DIAMOND
+      slot: 20
+      buy: 600
+      sell: 500
+      amount: 1
+    emerald:
+      material: EMERALD
+      slot: 22
+      buy: 350
+      sell: 300
+      amount: 1
+  filler:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: -1
+
+sell-prices:
+  DIAMOND: 500
+  EMERALD: 300
+  GOLD_INGOT: 100
+  IRON_INGOT: 50
