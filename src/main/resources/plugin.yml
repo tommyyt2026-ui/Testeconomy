@@ -1,0 +1,13 @@
+name: TestEconomy
+main: de.tommyyt.testeconomy.TestEconomy
+version: 1.0.0
+author: TommyYT_
+api-version: '1.21'
+softdepend: [Vault, PlaceholderAPI]
+commands:
+  pay:
+    usage: /pay <spieler> <betrag>
+  sell:
+    usage: /sell [all]
+  shop:
+    usage: /shop
